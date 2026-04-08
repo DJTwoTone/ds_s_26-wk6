@@ -1,4 +1,4 @@
-# Weekly Coding #5: Moonlight Museum Tree Guide
+# Weekly Coding #5: Skyrail Station Navigator
 
 **Topic:** Trees, Traversals, and BST Basics  
 **Course:** Data Structures (Python 3.11+)  
@@ -12,12 +12,12 @@ README.md
 ```
 
 ## Story
-The **Moonlight Museum** is building a small software tool to organize its exhibits.
+The **Skyrail Transit Team** is testing a small route-planning system for a new elevated train line.
 
-The museum uses **trees** in two different ways:
+The engineers use **trees** in two different ways:
 
-1. A **category tree** stores exhibit sections such as `Museum`, `History`, and `Science`.
-2. A **binary search tree (BST)** stores exhibit ID numbers so the museum can search and add IDs efficiently.
+1. A **station map tree** stores route sections such as `Central`, `North Line`, and `South Line`.
+2. A **binary search tree (BST)** stores station ID numbers so the team can search and add stations efficiently.
 
 Your job is to finish the core tree functions in `src/challenges.py`.
 
@@ -109,18 +109,18 @@ If the tree is empty, `bst_insert` should create and return a new root node.
 ## Example tree for traversal thinking
 
 ```text
-        Museum
-       /      \
- History      Science
+        Central
+       /       \
+North Line   South Line
    /   \          \
-Art   Maps      Space
+Maple Elm      Harbor
 ```
 
 For this tree:
 
-- Preorder: `Museum, History, Art, Maps, Science, Space`
-- Inorder: `Art, History, Maps, Museum, Science, Space`
-- Postorder: `Art, Maps, History, Space, Science, Museum`
+- Preorder: `Central, North Line, Maple, Elm, South Line, Harbor`
+- Inorder: `Maple, North Line, Elm, Central, South Line, Harbor`
+- Postorder: `Maple, Elm, North Line, Harbor, South Line, Central`
 
 ---
 
